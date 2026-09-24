@@ -15,4 +15,4 @@ jobs:
         with:
           python-version: ${{matrix.python}}
       - name: Run doctests
-        run: python3 -m doctest lab.py
+        run: python3 -c "import doctest, lab; exit(doctest.testmod(lab, verbose=True).failed)"
