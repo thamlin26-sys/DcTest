@@ -16,4 +16,4 @@ jobs:
           python-version: ${{matrix.python}}
       - name: Run tests
         run: |
-          python -m doctest --verbose .lab.py
+          python -m doctest --verbose lab.py
